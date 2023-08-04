@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Curnon Watch</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/alldonghonam.css" />
+    <link rel="stylesheet" href="/CSS/reponsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu-left">
+        <ul>
+          <li>
+            <a href="">Nam giới</a>
+            <div class="sub-menu-boy">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="/images/Colosseum.webp" alt="" />
+                    <p>Colosseum</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Kashmir.webp" alt="" />
+                    <p>Kashmir</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Weimar.webp" alt="" />
+                    <p>Weimar</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Jackson.webp" alt="" />
+                    <p>Jackson</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Detroit_1.webp" alt="" />
+                    <p>DETROIT</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Futura.webp" alt="" />
+                    <p>Futura</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Whitesands.webp" alt="" />
+                    <p>Whitesands</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="">&nbsp; Nữ giới</a>
+            <div class="sub-menu-girl">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="/images/Melis.webp" alt="" />
+                    <p>MELISSANI</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Moraine.webp" alt="" />
+                    <p>Moraine</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Hamilton.webp" alt="" />
+                    <p>Hamilton</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Khác</a>
+            <div class="sub-menu-2">
+              <ul>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Thông tin tin tức</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <input hidden type="checkbox" class="nav-input" id="nav-mobie-input" />
+      <label for="nav-mobie-input" class="repon-menu">
+        <i style="font-size: 35px" class="bx bx-menu"></i>
+      </label>
+      <div class="logo">
+        <a href="index.html"><img src="/images/logocurnon.svg" alt="" /></a>
+      </div>
+      <div class="menu-right">
+        <div id="shopping-cart">
+          <ul>
+            <li>
+              <a id="card-click" href="###"
+                >Giỏ hàng <i class="bx bx-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bx-search"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="overlay"></div>
+      </div>
+
+      <section class="nav-mobie">
+        <div class="close">
+          <p>DANH MỤC</p>
+          <label for="nav-mobie-input">ĐÓNG</label>
+        </div>
+        <ul>
+          <li>
+            <a href="">Nam giới</a>
+          </li>
+          <li><a href="">Nữ giới</a></li>
+          <li><a href="">Phụ kiện</a></li>
+          <li><a href="">Về chúng tôi</a></li>
+          <li><a href="">Thông tin tin tức</a></li>
+        </ul>
+      </section>
+
+      <label for="nav-mobie-input" class="overlay-mobie"></label>
+    </header>
+
+    <section id="cards">
+      <div class="card-title">
+        <p>GIỎ HÀNG CỦA BẠN</p>
+        <p>X</p>
+      </div>
+
+      <div class="card-content">
+        <p class="p-first">
+          <i class="bx bx-car"></i> MIỄN PHÍ GIAO HÀNG ĐƠN HÀNG >700K
+        </p>
+        <div id="div-show-product">
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+            <span class="cart-price cart-header cart-column">Giá</span>
+            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total">
+            <div>
+              <strong class="cart-total-title">Tổng Cộng:</strong>
+              <span class="cart-total-price">0VNĐ</span>
+            </div>
+            <div class="payy">
+              <h4>thanh toán</h4>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Hiện đang chưa có sản phẩm nào trong giỏ hàng của bạn.</p>
+          <button>MUA HÀNG NGAY <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container-banner">
+        <img src="/images/BANNER-ALLSP.webp" alt="" />
+      </div>
+    </section>
+
+    <section class="list-product">
+      <div class="container-list-product">
+        <h1>ĐỒNG HỒ NAM</h1>
+        <div class="text1">
+          <p>Sự tự tin trên cổ tay của người đàn ông hiện đại</p>
+          <p>18 trên 50 sản phẩm</p>
+        </div>
+
+        <div class="items-produc-special">
+          <img src="/images//all-dongho-khung.png" alt="" />
+          <div class="title-special">
+            <ul>
+              <li><a href="">Melissani</a></li>
+              <li><a href="">Whitesands</a></li>
+              <li><a href="">Colosseum</a></li>
+            </ul>
+            <div class="content-special">
+              <p>
+                Xem tất cả đồng hồ cao cấp MELISSANI
+                <i class="bx bx-chevron-right"></i>
+              </p>
+            </div>
+            <div class="product-special">
+              <div class="item-produc-special">
+                <img src="/images/HYPERBLUE.webp" alt="" />
+                <h5>Whitesands</h5>
+                <h3>HYPER BLUE</h3>
+                <p>3.499.000 đ</p>
+              </div>
+              <div class="item-produc-special">
+                <img src="/images/GALL.webp" alt="" />
+                <h5>Whitesands</h5>
+                <h3>GALLANT</h3>
+                <p>2.199.000 đ</p>
+              </div>
+              <div class="item-produc-special">
+                <img src="/images/OTTO.webp" alt="" />
+                <h5>Whitesands</h5>
+                <h3>OTTO</h3>
+                <p>1.954.000 đ</p>
+              </div>
+              <div class="item-produc-special">
+                <img src="/images/m59.webp" alt="" />
+                <h5>Whitesands</h5>
+                <h3>M-59</h3>
+                <p>2.379.000 đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-select">
+          <ul>
+            <li>
+              <a href="">Bộ sưu tập <i class="bx bx-chevron-down"></i></a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="/images/Colosseum.webp" alt="" />
+                      <p>Colosseum</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Kashmir.webp" alt="" />
+                      <p>Kashmir</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Weimar.webp" alt="" />
+                      <p>Weimar</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Jackson.webp" alt="" />
+                      <p>Jackson</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Detroit_1.webp" alt="" />
+                      <p>DETROIT</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Futura.webp" alt="" />
+                      <p>Futura</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/Whitesands.webp" alt="" />
+                      <p>Whitesands</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">kích thước <i class="bx bx-chevron-down"></i></a>
+              <div class="size">
+                <ul>
+                  <li>
+                    <a href=""
+                      ><p>40</p>
+                      <p>40mm</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><p>42</p>
+                      <p>42mm</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><p>38</p>
+                      <p>38mm</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href=""
+                >Màu sắc <i class="bx bx-chevron-down"></i>
+
+                <div class="sub-menu-3">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img src="/images/1.webp" alt="" />
+                        <p>Bạc</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/2.webp" alt="" />
+                        <p>vàng hồng</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/3.webp" alt="" />
+                        <p>đen</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/5.webp" alt="" />
+                        <p>xanh</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/6.webp" alt="" />
+                        <p>xám</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/7.webp" alt="" />
+                        <p>nâu</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/images/8.webp" alt="" />
+                        <p>cà phê</p>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="">
+                        <img src="/images/9.webp" alt="" />
+                        <p>da</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="">Chất liệu dây <i class="bx bx-chevron-down"></i></a>
+              <div class="sub-menu-material">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="/images/dayda.webp" alt="" />
+                      <p>Dây da Genuine</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/daykimloai.webp" alt="" />
+                      <p>Dây kim loại</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="/images/daythepkogi.webp" alt="" />
+                      <p>Dây thép không gỉ</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sort">
+              <a href="#"> SẮP XẾP THEO <i class="bx bx-chevron-down"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-select-mobie">
+          <div class="containermobie">
+            <div class="v-mobie click-showw">
+              <p>BỘ LỌC</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="v-mobie">
+              <p>SẮP XẾP THEO</p>
+              <i class="bx bx-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay-all-clock">
+          <div class="title-all">
+            <p>BỘ LỌC</p>
+            <p id="afd">X</p>
+          </div>
+          <div class="content-all">
+            <div class="conten-all-v">
+              <p>BỘ SƯU TẬP</p>
+              <i class="bx bx-chevron-right"></i>
+              <ul class="as">
+                <li><a href="">Colosseum</a></li>
+                <li><a href="">Kashmir</a></li>
+                <li><a href="">Weimar</a></li>
+                <li><a href="">Jackson</a></li>
+                <li><a href="">Detroit</a></li>
+                <li><a href="">Futura</a></li>
+                <li><a href="">Whitesands</a></li>
+              </ul>
+            </div>
+            <div class="conten-all-v">
+              <p>KÍCH THƯỚC</p>
+              <i class="bx bx-chevron-right"></i>
+              <ul class="as">
+                <li><a href="">38mm</a></li>
+                <li><a href="">40mm</a></li>
+                <li><a href="">42mm</a></li>
+              </ul>
+            </div>
+            <div class="conten-all-v">
+              <p>MÀU SẮC</p>
+              <i class="bx bx-chevron-right"></i>
+              <ul class="as">
+                <li><a href="">Bạc</a></li>
+                <li><a href="">Vàng đồng</a></li>
+                <li><a href="">Đen</a></li>
+                <li><a href="">Trắng</a></li>
+                <li><a href="">Xanh dương</a></li>
+                <li><a href="">Xám</a></li>
+                <li><a href="">Nâu</a></li>
+                <li><a href="">Màu cà phê</a></li>
+                <li><a href="">Vàng</a></li>
+              </ul>
+            </div>
+            <div class="conten-all-v">
+              <p>CHẤT LIỆU DÂY</p>
+              <i class="bx bx-chevron-right"></i>
+              <ul class="as">
+                <li><a href="">Dây da Genuine</a></li>
+                <li><a href="">Dây kim loại</a></li>
+                <li><a href="">Dây thép không gỉ</a></li>
+                <li><a href="">Dây cao su</a></li>
+                <li><a href="">Dây vải nato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="title-pr">Whitesands</span>
+        <section class="product">
+          <div class="item-product">
+            <span class="sale">-15%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/wolfgang.webp" alt="" />
+            <ul>
+              <li><a href="">WEIMAR</a></li>
+              <li><a href="">WOLFGANG</a></li>
+              <li>
+                <a href=""
+                  ><span price="2039000">2.039.000 <span>đ&nbsp; </span></span>
+                  <span>2.399.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">-10%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/RIGEEE.webp" alt="" />
+            <ul>
+              <li><a href="">KASHMIR</a></li>
+              <li><a href="">RISE</a></li>
+              <li>
+                <a href=""
+                  ><span price="1954000">1.954.000 <span>đ&nbsp; </span></span>
+                  <span>2.299.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/GALL.webp" alt="" />
+            <ul>
+              <li><a href="">KASHMIR</a></li>
+              <li><a href="">GALLANT</a></li>
+              <li>
+                <a href=""
+                  ><span price="2199000">2.199.000 <span>đ&nbsp; </span></span>
+                  <span> <span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">-15%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/CALM.webp" alt="" />
+            <ul>
+              <li><a href="">KASHMIR</a></li>
+              <li><a href="">CALM</a></li>
+              <li>
+                <a href=""
+                  ><span price="1954000">1.954.000 <span>đ &nbsp;</span></span>
+                  <span>2.299.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <span class="title-pr">Jackson</span>
+        <section class="product">
+          <div class="item-product">
+            <span class="sale">-20%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/POTENT.webp" alt="" />
+            <ul>
+              <li><a href="">KASHMIR</a></li>
+              <li><a href="">POTENT</a></li>
+              <li>
+                <a href=""
+                  ><span price="1869000">1.869.000 <span>đ &nbsp;</span></span>
+                  <span>2.199.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/SHARP.webp" alt="" />
+            <ul>
+              <li><a href="">KASHMIR</a></li>
+              <li><a href="">SHARP</a></li>
+              <li>
+                <a href=""
+                  ><span price="2299000">2.299.000 <span>đ&nbsp; </span></span>
+                  <span> <span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">-15%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/OTTO.webp" alt="" />
+            <ul>
+              <li><a href="">WEIMAR</a></li>
+              <li><a href="">OTTO</a></li>
+              <li>
+                <a href=""
+                  ><span price="1954000">1.954.000 <span>đ&nbsp; </span></span>
+                  <span>2.299.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/sandstorm.webp" alt="" />
+            <ul>
+              <li><a href="">JACKSON</a></li>
+              <li><a href="">SANDSTORM</a></li>
+              <li>
+                <a href=""
+                  ><span price="3199000">3.199.000<span>đ &nbsp;</span></span>
+                  <span> <span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <span class="title-pr">Colosseum</span>
+        <section class="product">
+          <div class="item-product">
+            <span class="sale">-5%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/8mile.webp" alt="" />
+            <ul>
+              <li><a href="">DETROIT</a></li>
+              <li><a href="">W8 MILENDER</a></li>
+              <li>
+                <a href=""
+                  ><span price="2379000">2.379.000 <span>đ&nbsp; </span></span>
+                  <span>2.799.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/VEGA.webp" alt="" />
+            <ul>
+              <li><a href="">FUTURA</a></li>
+              <li><a href="">VEGA</a></li>
+              <li>
+                <a href=""
+                  ><span price="3399000">3.399.000 <span>đ&nbsp; </span></span>
+                  <span><span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/I-275.webp" alt="" />
+            <ul>
+              <li><a href="">DETROIT</a></li>
+              <li><a href="">I 275</a></li>
+              <li>
+                <a href=""
+                  ><span price="3099000">3.099.000 <span>đ&nbsp; </span></span>
+                  <span> <span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/goldenrod.webp" alt="" />
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href="">GOLDENROD</a></li>
+              <li>
+                <a href=""
+                  ><span price="3499000">3.499.000 <span>đ &nbsp;</span></span>
+                  <span> <span></span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <span class="title-pr">Kashmir</span>
+        <section class="product">
+          <div class="item-product">
+            <span class="sale">Hot</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/SILVERY.webp" alt="" />
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href="">SILVERY</a></li>
+              <li>
+                <a href=""
+                  ><span price="3299000">3.299.000 <span>đ</span></span>
+                  <span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-product">
+            <span class="sale">-5%</span>
+            <span class="insert-card">THÊM VÀO GIỎ</span>
+            <img src="/images/m59-01.webp" alt="" />
+            <ul>
+              <li><a href="">DETROIT</a></li>
+              <li><a href="">M-59</a></li>
+              <li>
+                <a href=""
+                  ><span price="2379000">2.379.000 <span>đ&nbsp; </span></span>
+                  <span>2.799.000 <span>đ</span></span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="videoif">
+          <video controls>
+            <source src="/images/Vera Cuff - Curnon.mp4" />
+          </video>
+
+          <div class="textview">
+            <h2>PHA TRỘN VÀ KẾT HỢP</h2>
+            <p class="pk">PHỤ KIỆN</p>
+            <p>
+              Khẳng định cá tính, phong cách của bản thân với những phụ kiện
+              không thể thiếu từ Curnon
+            </p>
+            <button type="submit">KHÁM PHÁ NGAY</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="slideshow-product-best">
+      <div class="slideshow-product-best-text">
+        <h2>LÀ MỘT PHẦN CỦA CURNON</h2>
+        <p>Ai nói bạn không thể lựa chọn gia đình?</p>
+      </div>
+
+      <div class="slider-product-one-content">
+        <div class="slider-product-one-content-container">
+          <div class="slider-product-one-content-items-all">
+            <div class="slider-product-one-content-items">
+              <div class="slider-product-one-content-item">
+                <img src="/images/t1.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t2.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t3.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t4.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t5.webp" />
+              </div>
+            </div>
+            <div class="slider-product-one-content-items">
+              <div class="slider-product-one-content-item">
+                <img src="/images/t6.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t7.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t8.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t9.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t10.webp" />
+              </div>
+            </div>
+          </div>
+          <div class="slider-product-one-content-btn">
+            <i class="bx bx-chevron-left left11"></i>
+            <i class="bx bx-chevron-right right11"></i>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        /*------slidershow anh truot */
+        var trai = document.querySelector(".left11");
+        var phai = document.querySelector(".right11");
+        var tongtruot = document.querySelectorAll(
+          ".slider-product-one-content-items"
+        );
+        var index = 0;
+        trai.addEventListener("click", function () {
+          index++;
+          if (index > tongtruot.length - 1) {
+            index = 0;
+          }
+          document.querySelector(
+            ".slider-product-one-content-items-all"
+          ).style.right = index * 100 + "%"; //đặt vị trí bên phải theo chiều rộng phần tử mẹ
+        });
+
+        phai.addEventListener("click", function () {
+          index = index - 1;
+          if (index < 0) {
+            index = tongtruot.length - 1;
+          }
+          document.querySelector(
+            ".slider-product-one-content-items-all"
+          ).style.right = index * 100 + "%";
+        });
+      </script>
+    </section>
+
+    <footer>
+      <div class="contact-info">
+        <div class="contact-info-item-one">
+          <h4>NHẬN THÔNG TIN MỚI NHẤT TỪ CURNON</h4>
+          <div class="contact-register">
+            <form action="">
+              <div class="select-gender">
+                <select name="" id="">
+                  <option disabled value selected>Giới tính</option>
+                  <option value="">Nam</option>
+                  <option value="">Nữ</option>
+                </select>
+                <div class="contact-input">
+                  <input type="text" name="" id="" placeholder="Họ tên..." />
+                </div>
+                <div class="contact-input">
+                  <input type="email" name="" id="" placeholder="Email..." />
+                </div>
+              </div>
+
+              <div class="send">
+                <button type="submit">ĐĂNG KÝ NGAY</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contact-three-item">
+          <div class="email">
+            <h4>LIÊN LẠC</h4>
+            <p>cskh@curnonwatch.com</p>
+            <p>0868889103</p>
+          </div>
+          <div class="network">
+            <img src="/images/fb.svg" alt="" />
+            <img src="/images/intagram.svg" alt="" />
+            <img src="/images/youtube.svg" alt="" />
+          </div>
+          <div class="pay">
+            <img src="/images/cason.png" alt="" />
+            <img src="/images/xanh.png" alt="" />
+            <img src="/images/momo.png" alt="" />
+            <img src="/images/vnpay.png" alt="" />
+          </div>
+        </div>
+        <div class="store">
+          <h4>CỬA HÀNG HÀ NỘI</h4>
+          <p>33 Hàm Long, Hoàn Kiếm.</p>
+          <p>9 B7 Phạm Ngọc Thạch, Đống Đa.</p>
+          <p>173C Kim Mã, Ba Đình.</p>
+          <h4 id="h42">CỬA HÀNG TP.HCM.</h4>
+          <p>25 Nguyễn Trãi, P.Bến Thành, Quận 1.</p>
+          <p>348 Lê Văn Sỹ, Phường 14, Quận 3.</p>
+        </div>
+      </div>
+
+      <div class="menu-bottom">
+        <div class="container-mn">
+          <div class="menu-left-bottom">
+            <ul>
+              <li><a href="">Đồng hồ nam</a></li>
+              <li><a href="">Đồng hồ nữ</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-right-bottom">
+            <ul>
+              <li><a href="">Chính sách vận chuyển</a></li>
+              <li><a href="">|</a></li>
+              <li><a href="">Đổi trả & Bảo hành</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ftend">
+        <div class="containerend">
+          <div class="textend">
+            <p>© 2021 - Bản quyền của CTCP PHÁT TRIỂN SẢN PHẨM SÁNG TẠO VIỆT</p>
+            <p>
+              Giấy chứng nhận ĐKKD số 0108150321 do Sở Kế hoạch và Đầu tư Thành
+              phố Hà Nội <br />
+              cấp ngày 29/01/2018 123C Thụy Khuê, Tây Hồ, Hà Nội
+            </p>
+          </div>
+          <div class="imgend">
+            <img src="/images/congthuong.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/JS/index.js"></script>
+  <script src="https://uhchat.net/code.php?f=dca6cb"></script>
+</html>

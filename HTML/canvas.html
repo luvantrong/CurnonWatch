@@ -1,0 +1,51 @@
+<style>
+  @font-face {
+    font-family: thuphap;
+    src: url("HL-OngDo-Unicode.ttf");
+  }
+  #myCanvas {
+    width: 80px;
+    height: 40px;
+    /* background-color: darkkhaki; */
+    position: absolute;
+    left: 50%;
+  }
+</style>
+<html>
+  <body>
+    <canvas id="myCanvas"> </canvas>
+  </body>
+</html>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  //   ctx.beginPath();
+  //   ctx.strokeStyle = "darkblue";
+  //   ctx.lineWidth = 1;
+  //   ctx.arc(150, 80, 50, 0, 2 * Math.PI);
+  //   ctx.stroke();
+  //   ctx.fillStyle = "darkblue";
+  //   ctx.fill();
+
+  //   ctx.font = "55px Arial";
+  //   ctx.strokeStyle = "white";
+  //   ctx.strokeText("C", 125, 90);
+  //   ctx.font = "50px Arial";
+  //   ctx.strokeStyle = "yellow";
+  //   ctx.strokeText("N", 140, 100);
+
+  //   ctx.font = "30px Verdana";
+  ctx.beginPath();
+  ctx.fillRect(95, 00, 68, 17);
+
+  ctx.beginPath();
+  ctx.arc(130, 65, 35, 0, 2 * Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(130, 65, 21, 0, 2 * Math.PI);
+  ctx.fillStyle = "white";
+  ctx.fill();
+  ctx.stroke();
+</script>

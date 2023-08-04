@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Curnon Watch</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/chitietsanpham.css" />
+    <link rel="stylesheet" href="/CSS/reponsive.css" />
+  </head>
+  <body onload="start();">
+    <header class="header">
+      <div class="menu-left">
+        <ul>
+          <li>
+            <a href="">Nam giới</a>
+            <div class="sub-menu-boy">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="/images/Colosseum.webp" alt="" />
+                    <p>Colosseum</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Kashmir.webp" alt="" />
+                    <p>Kashmir</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Weimar.webp" alt="" />
+                    <p>Weimar</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Jackson.webp" alt="" />
+                    <p>Jackson</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Detroit_1.webp" alt="" />
+                    <p>DETROIT</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Futura.webp" alt="" />
+                    <p>Futura</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Whitesands.webp" alt="" />
+                    <p>Whitesands</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="">&nbsp; Nữ giới</a>
+            <div class="sub-menu-girl">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="/images/Melis.webp" alt="" />
+                    <p>MELISSANI</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Moraine.webp" alt="" />
+                    <p>Moraine</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/images/Hamilton.webp" alt="" />
+                    <p>Hamilton</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Khác</a>
+            <div class="sub-menu-2">
+              <ul>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Thông tin tin tức</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <input hidden type="checkbox" class="nav-input" id="nav-mobie-input" />
+      <label for="nav-mobie-input" class="repon-menu">
+        <i style="font-size: 35px" class="bx bx-menu"></i>
+      </label>
+      <div class="logo">
+        <a href="index.html"><img src="/images/logocurnon.svg" alt="" /></a>
+      </div>
+      <div class="menu-right">
+        <div id="shopping-cart">
+          <ul>
+            <li>
+              <a id="card-click" href="###"
+                >Giỏ hàng <i class="bx bx-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bx-search"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="overlay"></div>
+      </div>
+
+      <section class="nav-mobie">
+        <div class="close">
+          <p>DANH MỤC</p>
+          <label for="nav-mobie-input">X</label>
+        </div>
+        <ul>
+          <li>
+            <a href="">Nam giới</a>
+          </li>
+          <li><a href="">Nữ giới</a></li>
+          <li><a href="">Phụ kiện</a></li>
+          <li><a href="">Về chúng tôi</a></li>
+          <li><a href="">Thông tin tin tức</a></li>
+        </ul>
+      </section>
+
+      <label for="nav-mobie-input" class="overlay-mobie"></label>
+    </header>
+
+    <section id="cards">
+      <div class="card-title">
+        <p>GIỎ HÀNG CỦA BẠN</p>
+        <p>X</p>
+      </div>
+
+      <div class="card-content">
+        <p class="p-first">
+          <i class="bx bx-car"></i> MIỄN PHÍ GIAO HÀNG ĐƠN HÀNG >700K
+        </p>
+        <div id="div-show-product">
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+            <span class="cart-price cart-header cart-column">Giá</span>
+            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total">
+            <div>
+              <strong class="cart-total-title">Tổng Cộng:</strong>
+              <span class="cart-total-price">0VNĐ</span>
+            </div>
+            <div class="payy">
+              <h4>thanh toán</h4>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Hiện đang chưa có sản phẩm nào trong giỏ hàng của bạn.</p>
+          <button>MUA HÀNG NGAY <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="abc">
+      <hr />
+    </section>
+
+    <section class="banner-product">
+      <div class="container-product">
+        <div class="slideshow-mobie">
+          <img id="im-mb" src="/images/bluchitiet1.webp" alt="" />
+        </div>
+
+        <div class="btn-mobie">
+          <span class="btn-mb" name="/images/bluchitiet1.webp"
+            ><i class="bx bxs-circle"></i
+          ></span>
+          <span class="btn-mb" name="/images/bluchitiet2.webp"
+            ><i class="bx bxs-circle"></i
+          ></span>
+          <span class="btn-mb" name="/images/bluchitiet3.webp"
+            ><i class="bx bxs-circle"></i
+          ></span>
+          <span class="btn-mb" name="/images/bluchitiet4.webp"
+            ><i class="bx bxs-circle"></i
+          ></span>
+          <span class="btn-mb" name="/images/bluchitiet5.webp"
+            ><i class="bx bxs-circle"></i
+          ></span>
+        </div>
+
+        <script>
+          var btn_mb = document.querySelectorAll(".btn-mb");
+          console.log(btn_mb);
+
+          btn_mb.forEach(function (item) {
+            item.addEventListener("click", function () {
+              var u = item.getAttribute("name");
+              document.getElementById("im-mb").src = u;
+            });
+          });
+        </script>
+
+        <div class="picture-small-product">
+          <img class="picture-detail" src="/images/bluchitiet1.webp" alt="" />
+          <img class="picture-detail" src="/images/bluchitiet2.webp" alt="" />
+          <img class="picture-detail" src="/images/bluchitiet3.webp" alt="" />
+          <img class="picture-detail" src="/images/bluchitiet4.webp" alt="" />
+          <img class="picture-detail" src="/images/bluchitiet5.webp" alt="" />
+        </div>
+        <div class="picture-big-product">
+          <img id="add-picture" src="/images/bluchitiet1.webp" alt="" />
+        </div>
+        <div class="info-product">
+          <div class="container-info-product">
+            <h4>ĐỒNG HỒ</h4>
+            <h1>HYPER BLUE</h1>
+            <p>
+              <strong style="color: blue"> 3.499.000</strong>
+              <span
+                ><strong style="color: blue"><u>đ</u></strong></span
+              >
+              &nbsp; &nbsp;
+              <span style="font-size: 10px"
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i> (0)</span
+              >
+            </p>
+            <p>
+              <span style="color: rgb(116, 116, 119)">hoặc</span>
+              <span>1.166.000 </span>
+              <span>đ</span>
+              <span>x 3 kỳ với </span>
+              <span style="color: #5fbdfb">trả góp</span>
+            </p>
+            <p class="status">
+              Tình trạng:
+              <span style="color: #3bb100">Còn hàng</span>
+              <span>&nbsp; | &nbsp;</span>
+              <span
+                ><i class="bx bx-ruler"></i>
+                <span
+                  ><u><i>Cỡ cổ tay</i></u>
+                </span></span
+              >
+            </p>
+
+            <p>THANH TOÁN NGAY</p>
+            <p>THÊM VÀO GIỎ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="list-offer">
+      <div class="menu-incentive">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="bx bx-car"></i> MIỄN PHÍ GIAO HÀNG ĐƠN HÀNG >700K</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-check-shield"></i> BẢO HÀNH 10 NĂM</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bx-food-menu"></i> ĐỔI TRẢ MIỄN PHÍ TRONG VÒNG 3
+              NGÀY</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="content-products">
+      <div class="container-content-products">
+        <div class="cp-left">
+          <div class="cp-left-one">
+            <h2>HYPER BLUE</h2>
+            <h4>Tinh tế, đầy nét hoài cổ</h4>
+            <p>
+              Lấy cảm hứng từ vẻ đẹp cổ điển ở các tạp chí thời trang thuộc
+              những năm 1930 – 1950, những mẫu thiết kế đồng hồ tinh tế đầy nét
+              hoài cổ đã được đông đảo người dùng đón nhận. Không phải là xưa
+              cũ, giá trị mà Fossil chọn để tạo dựng thương hiệu cho mình chính
+              là sự vững chắc. Từ những thiết kế “retro” cho đồng hồ, họ tin
+              rằng những sản phẩm “thời gian” đó sẽ không bao giờ có dấu hiệu
+              thoái trào. Nói một cách đơn giản, đó là lời cam kết giữa thiết kế
+              trường tồn và chất lượng bền bỉ.
+            </p>
+          </div>
+
+          <p>Thông tin sản phẩm</p>
+          <div class="img-ct">
+            <img src="/images/HPBL.jpg" alt="" />
+          </div>
+
+          <p class="cp-btn">Xem thêm <i class="bx bx-chevron-right"></i></p>
+          <div class="comment">
+            <div class="img-comment">
+              <img src="/images/Screenshot 2022-07-15 at 11.40.28.png" alt="" />
+            </div>
+
+            <div class="content-comment">
+              <p>
+                Hãy đánh giá sản phẩm để giúp những khách hàng khác chọn được
+                sản phẩm tốt nhất.
+              </p>
+              <p>
+                Bạn cảm thấy sản phẩm này như thế nào?
+                <i class="bx bx-star" style="color: #ef761e"></i
+                ><i class="bx bx-star" style="color: #ef761e"></i
+                ><i class="bx bx-star" style="color: #ef761e"></i
+                ><i class="bx bx-star" style="color: #ef761e"></i
+                ><i class="bx bx-star" style="color: #ef761e"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cauhinhchitiet">
+          <h4>Cấu hình Đồng hồ Hyper Blue 40 mm Nam FS5898</h4>
+          <ul>
+            <li>
+              <p>Kích thước mặt:</p>
+              <p>40 mm</p>
+            </li>
+            <li>
+              <p>Độ dày:</p>
+              <p>9.5 mm</p>
+            </li>
+            <li>
+              <p>Màu mặt:</p>
+              <p>Xanh</p>
+            </li>
+            <li>
+              <p>Loại máy:</p>
+              <p>Miyota Quartz</p>
+            </li>
+            <li>
+              <p>Kích cỡ dây:</p>
+              <p>24-18 mm</p>
+            </li>
+            <li>
+              <p>Chống nước:</p>
+              <p>5atm</p>
+            </li>
+            <li>
+              <p>Mặt kính:</p>
+              <p>Sapphire</p>
+            </li>
+            <li>
+              <p>Chất liệu dây:</p>
+              <p>Dây thép không gỉ</p>
+            </li>
+          </ul>
+          <div class="edn-ch">
+            <p>
+              Xem thêm cấu hình chi tiết <i class="bx bx-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="watch-s">
+      <div class="tt"><h3>Xem thêm đồng hồ thời trang khác</h3></div>
+
+      <div class="product">
+        <div class="item-product">
+          <span class="sale">-20%</span>
+          <span class="insert-card">THÊM VÀO GIỎ</span>
+          <img src="/images/POTENT.webp" alt="" />
+          <ul>
+            <li><a href="">KASHMIR</a></li>
+            <li><a href="">POTENT</a></li>
+            <li>
+              <a href=""
+                ><span price="1869000">1.869.000 <span>đ &nbsp;</span></span>
+                <span>2.199.000 <span>đ</span></span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="item-product">
+          <span class="sale">Hot</span>
+          <span class="insert-card">THÊM VÀO GIỎ</span>
+          <img src="/images/SHARP.webp" alt="" />
+          <ul>
+            <li><a href="">KASHMIR</a></li>
+            <li><a href="">SHARP</a></li>
+            <li>
+              <a href=""
+                ><span price="2299000">2.299.000 <span>đ&nbsp; </span></span>
+                <span> <span></span></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="item-product">
+          <span class="sale">-15%</span>
+          <span class="insert-card">THÊM VÀO GIỎ</span>
+          <img src="/images/OTTO.webp" alt="" />
+          <ul>
+            <li><a href="">WEIMAR</a></li>
+            <li><a href="">OTTO</a></li>
+            <li>
+              <a href=""
+                ><span price="1954000">1.954.000 <span>đ&nbsp; </span></span>
+                <span>2.299.000 <span>đ</span></span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="item-product">
+          <span class="sale">Hot</span>
+          <span class="insert-card">THÊM VÀO GIỎ</span>
+          <img src="/images/sandstorm.webp" alt="" />
+          <ul>
+            <li><a href="">JACKSON</a></li>
+            <li><a href="">SANDSTORM</a></li>
+            <li>
+              <a href=""
+                ><span price="3199000">3.199.000<span>đ &nbsp;</span></span>
+                <span> <span></span></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="comment-ct">
+      <div class="container-cm">
+        <div class="container-cm-one">
+          <textarea
+            name=""
+            id=""
+            cols="100"
+            rows="5"
+            placeholder="Mời bạn để lại bình luận..."
+          ></textarea>
+        </div>
+        <div class="container-cm-two">
+          <p>Bình Luận</p>
+          <div class="cm-one">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Tìm theo nội dung, người gửi..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slideshow-product-best">
+      <div class="slideshow-product-best-text">
+        <h2>LÀ MỘT PHẦN CỦA CURNON</h2>
+        <p>Ai nói bạn không thể lựa chọn gia đình?</p>
+      </div>
+
+      <div class="slider-product-one-content">
+        <div class="slider-product-one-content-container">
+          <div class="slider-product-one-content-items-all">
+            <div class="slider-product-one-content-items">
+              <div class="slider-product-one-content-item">
+                <img src="/images/t1.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t2.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t3.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t4.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t5.webp" />
+              </div>
+            </div>
+            <div class="slider-product-one-content-items">
+              <div class="slider-product-one-content-item">
+                <img src="/images/t6.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t7.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t8.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t9.webp" />
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="/images/t10.webp" />
+              </div>
+            </div>
+          </div>
+          <div class="slider-product-one-content-btn">
+            <i class="bx bx-chevron-left left11"></i>
+            <i class="bx bx-chevron-right right11"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact-info">
+        <div class="contact-info-item-one">
+          <h4>NHẬN THÔNG TIN MỚI NHẤT TỪ CURNON</h4>
+          <div class="contact-register">
+            <form action="">
+              <div class="select-gender">
+                <select name="" id="">
+                  <option disabled value selected>Giới tính</option>
+                  <option value="">Nam</option>
+                  <option value="">Nữ</option>
+                </select>
+                <div class="contact-input">
+                  <input type="text" name="" id="" placeholder="Họ tên..." />
+                </div>
+                <div class="contact-input">
+                  <input type="email" name="" id="" placeholder="Email..." />
+                </div>
+              </div>
+
+              <div class="send">
+                <button type="submit">ĐĂNG KÝ NGAY</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contact-three-item">
+          <div class="email">
+            <h4>LIÊN LẠC</h4>
+            <p>cskh@curnonwatch.com</p>
+            <p>0868889103</p>
+          </div>
+          <div class="network">
+            <img src="/images/fb.svg" alt="" />
+            <img src="/images/intagram.svg" alt="" />
+            <img src="/images/youtube.svg" alt="" />
+          </div>
+          <div class="pay">
+            <img src="/images/cason.png" alt="" />
+            <img src="/images/xanh.png" alt="" />
+            <img src="/images/momo.png" alt="" />
+            <img src="/images/vnpay.png" alt="" />
+          </div>
+        </div>
+        <div class="store">
+          <h4>CỬA HÀNG HÀ NỘI</h4>
+          <p>33 Hàm Long, Hoàn Kiếm.</p>
+          <p>9 B7 Phạm Ngọc Thạch, Đống Đa.</p>
+          <p>173C Kim Mã, Ba Đình.</p>
+          <h4 id="h42">CỬA HÀNG TP.HCM.</h4>
+          <p>25 Nguyễn Trãi, P.Bến Thành, Quận 1.</p>
+          <p>348 Lê Văn Sỹ, Phường 14, Quận 3.</p>
+        </div>
+      </div>
+
+      <div class="menu-bottom">
+        <div class="container-mn">
+          <div class="menu-left-bottom">
+            <ul>
+              <li><a href="">Đồng hồ nam</a></li>
+              <li><a href="">Đồng hồ nữ</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-right-bottom">
+            <ul>
+              <li><a href="">Chính sách vận chuyển</a></li>
+              <li><a href="">|</a></li>
+              <li><a href="">Đổi trả & Bảo hành</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ftend">
+        <div class="containerend">
+          <div class="textend">
+            <p>© 2021 - Bản quyền của CTCP PHÁT TRIỂN SẢN PHẨM SÁNG TẠO VIỆT</p>
+            <p>
+              Giấy chứng nhận ĐKKD số 0108150321 do Sở Kế hoạch và Đầu tư Thành
+              phố Hà Nội <br />
+              cấp ngày 29/01/2018 123C Thụy Khuê, Tây Hồ, Hà Nội
+            </p>
+          </div>
+          <div class="imgend">
+            <img src="/images/congthuong.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/JS/index.js"></script>
+  <script src="https://uhchat.net/code.php?f=dca6cb"></script>
+</html>
